@@ -4,26 +4,25 @@
 
 unsigned int offsets::m_pStudioBones = 0x2C70;         // unsigned long long m_pStudioBones;
 unsigned int offsets::m_flLowerBodyYawTarget = 0x42A8; // float m_flLowerBodyYawTarget; // 0x42C8
-unsigned int offsets::dwViewMatrix = 0x2537374;        // 4x4 float matrix //2537334 and 2553C14 on Aug-7-17
-unsigned int offsets::m_lifeState = 0x293;             // int m_lifeState; // 0x293
-unsigned int offsets::m_bIsDefusing = 0x414C;          // unsigned char m_bIsDefusing; // 0x416C
-unsigned int offsets::m_bIsScoped = 0x4144;            // unsigned char m_bIsScoped; // 0x4164
-unsigned int offsets::m_bGunGameImmunity = 0x4178;     // unsigned char m_bGunGameImmunity; // 0x4178
-unsigned int offsets::m_iShotsFired = 0xAB90;          // int m_iShotsFired; // 0xAB90 todo: sig scan for it
-unsigned int offsets::m_aimPunchAngle = 0x3764;        // Vector m_aimPunchAngle; // 0x3764
-unsigned int offsets::m_fFlashMaxAlpha = 0xabd4;       // flash max alpha 0-255 float value
+    unsigned int offsets::dwViewMatrix = 0x4C2EBB4;        // 4x4 float matrix //2537334 and 2553C14 on Aug-7-17
+    unsigned int offsets::m_lifeState = 0x25B;             // int m_lifeState; // 0x293
+    unsigned int offsets::m_bIsDefusing = 0x3898;          // unsigned char m_bIsDefusing; // 0x416C
+    unsigned int offsets::m_bIsScoped = 0x388E;            // unsigned char m_bIsScoped; // 0x4164
+    unsigned int offsets::m_bGunGameImmunity = 0x38A4;     // unsigned char m_bGunGameImmunity; // 0x4178
+    unsigned int offsets::m_iShotsFired = 0xA2C0;          // int m_iShotsFired; // 0xAB90 todo: sig scan for it
+    unsigned int offsets::m_aimPunchAngle = 0xA304;        // Vector m_aimPunchAngle; // 0x3764
+    unsigned int offsets::m_fFlashMaxAlpha = 0xA304;       // flash max alpha 0-255 float value
 unsigned int offsets::m_iFOV = 0x3998;      // fov when you are doing something other than being normal (scoped, etc.)
-unsigned int offsets::m_iFOVStart = 0x399c; // default fov
-unsigned int offsets::m_viewPunchAngle = 0x3758;  // Vector m_viewPunchAngle; // 0x3758
-unsigned int offsets::m_hObserverTarget = 0x3b54; // unsigned long long m_hObserverTarget; // 0x3B54
-unsigned int offsets::m_iObserveCamType = 0x3b50; // int 4 1st person, 5 3rd person, 6 free cam
-unsigned int offsets::m_bIsSpotted = 0xECD;       // todo: sig
-unsigned int offsets::m_hActiveWeapon = 0x3628;   // todo: sig
+    unsigned int offsets::m_iFOVStart = 0x31D8; // default fov
+    unsigned int offsets::m_viewPunchAngle = 0x3010;  // Vector m_viewPunchAngle; // 0x3758
+    unsigned int offsets::m_hObserverTarget = 0x3360; // unsigned long long m_hObserverTarget; // 0x3B54
+    unsigned int offsets::m_iObserveCamType =0x334C; // int 4 1st person, 5 3rd person, 6 free cam
+    unsigned int offsets::m_bIsSpotted = 0x939;       // todo: sig
+    unsigned int offsets::m_hActiveWeapon = 0x2EE8;   // todo: sig
 unsigned int offsets::m_iWeaponID =
     0x3788; // this is wrong name, its actually m_AttributeManager + m_Item + m_iItemDefinitionIndex
 unsigned int offsets::m_AttributeManager = 0x34c0; // todo: sig offset from entity to DataTable
-unsigned int offsets::m_iItemDefinitionIndex =
-    0x268; // offset from m_Item (DataTable + 0x60) of DataTable to the weapon's economy ID
+    unsigned int offsets::m_iItemDefinitionIndex = 0x2F9A; // offset from m_Item (DataTable + 0x60) of DataTable to the weapon's economy ID
 
 int settings::misc::hitmarker_time = 8;
 float settings::misc::hitmarker_length = 10;
